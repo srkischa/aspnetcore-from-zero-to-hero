@@ -4,15 +4,7 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
-
-/// <summary>
-/// TODO:
-/// 5. context.Response.OnStarting, check OnCompleted, Items 
-/// 6. inner middleware var innerBuilder = app.New();
-/// 7. Mix with CORS and Auth
-/// 8. Logging
-/// </summary>
-/// 
+ 
 namespace authorization
 {
     public class middleware_01
