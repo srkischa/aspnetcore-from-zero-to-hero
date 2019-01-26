@@ -12,6 +12,6 @@ TODO - Missing examples
 
 ## Examples:
 
-- [Run delegate](/middleware-01)
-
-- [Use delegate](/src/middleware/middleware-02)
+- [Run delegate](/src/middleware/middleware-01-Run)
+- [Use delegate](/src/middleware/middleware-02-Use)
+- [Use and Run mixed](/src/middleware/middleware-03-UseAndRun)

@@ -3,11 +3,10 @@ using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
-using Microsoft.Extensions.DependencyInjection;
- 
-namespace authorization
+
+namespace middleware_02
 {
-    public class middleware_01
+    public class Program
     {
         public static void Main(string[] args)
         {
@@ -18,16 +17,15 @@ namespace authorization
             WebHost.CreateDefaultBuilder(args)
                 .Configure(app =>
                 {
-                    //The order of these things is important. 
-                    app.Run(async (context) =>
+                    app.Use(async (context, next) =>
                     {
-                        await context.Response.WriteAsync($"Run will be called but use will not\n");
+                        await context.Response.WriteAsync($"The content from the first middleware\n");
+                        await next.Invoke();
                     });
 
                     app.Use(async (context, next) =>
                     {
-                        await context.Response.WriteAsync($"This will not be called\n");
-                        await next.Invoke();
+                        await context.Response.WriteAsync($"The content from the second middleware\n");
                     });
                 });
     }

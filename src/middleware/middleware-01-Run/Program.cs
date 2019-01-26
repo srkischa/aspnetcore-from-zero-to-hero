@@ -3,10 +3,11 @@ using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
+using Microsoft.Extensions.DependencyInjection;
 
-namespace middleware_03
+namespace authorization
 {
-    public class Program
+    public class middleware_01
     {
         public static void Main(string[] args)
         {
@@ -17,19 +18,16 @@ namespace middleware_03
             WebHost.CreateDefaultBuilder(args)
                 .Configure(app =>
                 {
-                    app.Use(async (context, next) =>
+                    //The run delegate terminates the pipeline 
+                    app.Run(async (context) =>
                     {
-                        await context.Response.WriteAsync($"First part of response\n");
-                        await next.Invoke();
+                        await context.Response.WriteAsync($"This Run will be called but second Run will not\n");
                     });
 
-                    //The order of these things are important. 
-                    app.Run(async (context) => await context.Response.WriteAsync($"Last part of response, end terminates response (short circuit)\n"));
-
-                    app.Use(async (context, next) =>
+                    //This will not be called
+                    app.Run(async (context) =>
                     {
                         await context.Response.WriteAsync($"This will not be called\n");
-                        await next.Invoke();
                     });
                 });
     }
