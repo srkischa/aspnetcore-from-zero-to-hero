@@ -9,11 +9,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "middleware-02-Use", "middle
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "middleware-03-UseAndRun", "middleware-03-UseAndRun\middleware-03-UseAndRun.csproj", "{865E1CA3-E9A5-42B6-B868-957E188E90CE}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "middleware-04", "middleware-04\middleware-04.csproj", "{3160514E-5DC9-45D8-A056-B7AA67E4E143}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "middleware-04-Map", "middleware-04-Map\middleware-04-Map.csproj", "{3160514E-5DC9-45D8-A056-B7AA67E4E143}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "middleware-05", "middleware-05\middleware-05.csproj", "{43ED2EA2-A2C8-4F48-962F-A5A214686A61}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "middleware-06-ClassBased", "middleware-06-ClassBased\middleware-06-ClassBased.csproj", "{43ED2EA2-A2C8-4F48-962F-A5A214686A61}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "middleware-06", "middleware-06\middleware-06.csproj", "{17CA8AC3-C765-4B98-A094-13829F1A108A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "middleware-07-Factory", "middleware-07-Factory\middleware-07-Factory.csproj", "{17CA8AC3-C765-4B98-A094-13829F1A108A}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "middleware-07", "middleware-07\middleware-07.csproj", "{D72B0E09-10B5-455F-83F2-E78105775F73}"
 EndProject

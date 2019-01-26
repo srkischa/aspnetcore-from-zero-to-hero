@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace middleware_06
+namespace middleware_07
 {
     public class Program
     {
@@ -47,7 +47,7 @@ namespace middleware_06
         }
     }
 
-    public class FactoryBasedMiddleware: IMiddleware
+    public class FactoryBasedMiddleware : IMiddleware
     {
         private readonly IScopedService _service;
 
@@ -65,10 +65,10 @@ namespace middleware_06
 
     public interface IScopedService
     {
-        int Length { get; set;  }
+        int Length { get; set; }
     }
 
-    public class ScopedService: IScopedService
+    public class ScopedService : IScopedService
     {
         public int Length { get; set; } = 20;
     }
