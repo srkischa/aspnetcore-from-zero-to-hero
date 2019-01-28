@@ -17,5 +17,6 @@ TODO - Missing examples
 - [Use delegate](/src/middleware/middleware-02-Use/Program.cs)
 - [Use and Run mixed](/src/middleware/middleware-03-UseAndRun/Program.cs)
 - [Map delegate](/src/middleware/middleware-04-Map/Program.cs)
+- [MapWhen delegate](/src/middleware/middleware-04-Map/Program.cs)
 - [Class based middleware](/src/middleware/middleware-06-ClassBased/Program.cs)
 - [Factory based middleware](/src/middleware/middleware-07-Factory/Program.cs)

@@ -15,7 +15,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "middleware-06-ClassBased", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "middleware-07-Factory", "middleware-07-Factory\middleware-07-Factory.csproj", "{17CA8AC3-C765-4B98-A094-13829F1A108A}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "middleware-07", "middleware-07\middleware-07.csproj", "{D72B0E09-10B5-455F-83F2-E78105775F73}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "middleware-05-MapWhen", "middleware-05-MapWhen\middleware-05-MapWhen.csproj", "{D72B0E09-10B5-455F-83F2-E78105775F73}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
